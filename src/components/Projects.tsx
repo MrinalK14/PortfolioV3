@@ -17,16 +17,25 @@ const Projects = () => {
     {
       title: "Essente Perfumes",
       description: "A modern, responsive E-commerce website for perfumes, built with React and Tailwind CSS, featuring a clean design and smooth animations.",
-      image: "/WhatsApp Image 2025-05-30 at 02.41.43_7206e7d2.jpg",
+      image: "/WhatsApp Image 2025-05-30 at 11.04.44_bdb1fa3e.jpg",
       category: "web",
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       github: "https://github.com/mrinalkapoor/portfolio",
       live: "https://mrinalkapoor.com"
     },
     {
+      title: "Photography Portfolio",
+      description: "A sleek photography portfolio design with fullscreen galleries, image lightbox, and smooth transitions.",
+      image: "/WhatsApp Image 2025-05-30 at 11.04.45_3b92c56c.jpg",
+      category: "web",
+      technologies: ["React", "Typescript", "Tailwind CSS"],
+      github: "",
+      live: "https://dribbble.com/mrinalkapoor"
+    },
+    {
       title: "Portfolio OS",
       description: "Interactive portfolio designed and developed like an operating system with window terminals showcasing different sections.",
-      image: "/WhatsApp Image 2025-05-30 at 02.41.42_55deb11d.jpg",
+      image: "/WhatsApp Image 2025-05-30 at 11.52.49_8d657720.jpg",
       category: "web",
       technologies: ["Next.js", "Typescript", "Tailwind CSS"],
       github: "https://github.com/mrinalkapoor/ecommerce-dashboard",
@@ -35,7 +44,7 @@ const Projects = () => {
     {
       title: "Portfolio V1",
       description: "My first portfolio website built with react, typesript and tailwind css.",
-      image: "/Portfolio1.jpg",
+      image: "/WhatsApp Image 2025-05-30 at 11.41.13_5b0cffe1.jpg",
       category: "mobile",
       technologies: ["React", "Typescript", "Tailwind CSS"],
       github: "https://github.com/mrinalkapoor/weather-app",
@@ -49,15 +58,6 @@ const Projects = () => {
       technologies: ["Vue.js", "Firebase", "Vuetify"],
       github: "https://github.com/mrinalkapoor/task-manager",
       live: "https://task-manager-demo.netlify.app"
-    },
-    {
-      title: "Photography Portfolio",
-      description: "A sleek photography portfolio design with fullscreen galleries, image lightbox, and smooth transitions.",
-      image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      category: "design",
-      technologies: ["Figma", "Adobe XD", "Photoshop"],
-      github: "",
-      live: "https://dribbble.com/mrinalkapoor"
     },
     {
       title: "Fitness Tracker",
