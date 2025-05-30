@@ -1,18 +1,9 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Carousel, Card } from '@/components/ui/apple-cards-carousel';
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
-  
-  const categories = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'web', label: 'Web Apps' },
-    { id: 'mobile', label: 'Mobile Apps' },
-    { id: 'design', label: 'Design' }
-  ];
-  
   const projects = [
     {
       title: "Essente Perfumes",
@@ -21,7 +12,7 @@ const Projects = () => {
       category: "web",
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       github: "https://github.com/mrinalkapoor/portfolio",
-      live: "https://mrinalkapoor.com"
+      live: "https://essente.vercel.app/"
     },
     {
       title: "Photography Portfolio",
@@ -30,7 +21,7 @@ const Projects = () => {
       category: "web",
       technologies: ["React", "Typescript", "Tailwind CSS"],
       github: "",
-      live: "https://dribbble.com/mrinalkapoor"
+      live: "https://photography-portfolio-umber-phi.vercel.app/"
     },
     {
       title: "Portfolio OS",
@@ -39,7 +30,7 @@ const Projects = () => {
       category: "web",
       technologies: ["Next.js", "Typescript", "Tailwind CSS"],
       github: "https://github.com/mrinalkapoor/ecommerce-dashboard",
-      live: "https://ecommerce-dashboard-demo.vercel.app"
+      live: "https://portfolio2-0-ten-peach.vercel.app/"
     },
     {
       title: "Portfolio V1",
@@ -48,7 +39,7 @@ const Projects = () => {
       category: "mobile",
       technologies: ["React", "Typescript", "Tailwind CSS"],
       github: "https://github.com/mrinalkapoor/weather-app",
-      live: ""
+      live: "https://mrinal-portfolio1.vercel.app/"
     },
     {
       title: "Task Manager",
@@ -69,13 +60,9 @@ const Projects = () => {
       live: ""
     }
   ];
-  
-  const filteredProjects = activeCategory === 'all' 
-    ? projects 
-    : projects.filter(project => project.category === activeCategory);
 
   // Map projects to card format
-  const cards = filteredProjects.map((project, index) => (
+  const cards = projects.map((project, index) => (
     <Card 
       key={project.title}
       card={{
@@ -103,6 +90,18 @@ const Projects = () => {
                 </div>
               </div>
             )}
+            {project.live && (
+              <div className="mt-6">
+                <a 
+                  href={project.live} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="apple-button flex items-center justify-center w-full"
+                >
+                  Visit Project
+                </a>
+              </div>
+            )}
           </div>
         )
       }}
@@ -120,25 +119,6 @@ const Projects = () => {
         <p className="section-subtitle text-center mb-16 animate-reveal-up animate-delay-100">
           Showcasing my latest work and creations
         </p>
-        
-        {/* Category tabs */}
-        <div className="flex justify-center mb-16 animate-reveal-up animate-delay-200">
-          <div className="inline-flex rounded-full bg-gray-100 dark:bg-neutral-900 p-1">
-            {categories.map(category => (
-              <button
-                key={category.id}
-                onClick={() => setActiveCategory(category.id)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeCategory === category.id 
-                    ? 'bg-white dark:bg-black text-black dark:text-white shadow-sm' 
-                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200'
-                }`}
-              >
-                {category.label}
-              </button>
-            ))}
-          </div>
-        </div>
       </div>
       
       {/* Expanded width container for carousel */}

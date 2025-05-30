@@ -27,6 +27,7 @@ const Navbar = ({ activeSection, scrolled }: NavbarProps) => {
     { id: 'skills', label: 'Skills' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
+    { id: 'certifications', label: 'Certifications' },
     { id: 'contact', label: 'Contact' },
   ];
 

@@ -68,7 +68,7 @@ const Hero = () => {
             <span>GitHub</span>
           </a>
           <a 
-            href="/resume.pdf" 
+            href="https://drive.google.com/file/d/1EKknlh-ZtOyzevriM3NOoplCapwyyRwl/view?usp=drive_link" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="apple-button-outline flex items-center gap-2"
