@@ -1,8 +1,11 @@
 "use client";
 
 import { User, Camera, Code, Aperture } from 'lucide-react';
+import { useTheme } from '../contexts/ThemeContext';
 
 const About = () => {
+  const { theme } = useTheme();
+  
   return (
     <section id="about" className="py-32 bg-white dark:bg-black">
       <div className="apple-section">
@@ -18,10 +21,17 @@ const About = () => {
           <div className="order-2 lg:order-1 animate-reveal-up animate-delay-200">
             <div className="relative">
               <div className="apple-image aspect-[3/4] overflow-hidden">
+                {/* Light mode image with fade transition */}
                 <img
                   src="/Mrinal.jpg"
                   alt="Mrinal Kapoor"
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover absolute inset-0 transition-opacity duration-300 ${theme === 'light' ? 'opacity-100' : 'opacity-0'}`}
+                />
+                {/* Dark mode image with fade transition */}
+                <img
+                  src="/Mrinal2.jpg"
+                  alt="Mrinal Kapoor"
+                  className={`w-full h-full object-cover absolute inset-0 transition-opacity duration-300 ${theme === 'dark' ? 'opacity-100' : 'opacity-0'}`}
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 -z-10"></div>

@@ -95,8 +95,8 @@ const Certifications = () => {
             {certifications.map((cert, index) => (
               <div 
                 key={index} 
-                className="bg-gray-50 dark:bg-neutral-950 rounded-2xl p-8 shadow-sm animate-reveal-up"
-                style={{ animationDelay: `${200 + index * 100}ms` }}
+                className="bg-gray-50 dark:bg-neutral-950 rounded-2xl p-8 shadow-sm opacity-0 animate-fade-in"
+                style={{ animationDelay: `${50 + index * 50}ms` }}
               >
                 <div className="flex items-start">
                   <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center mr-4 flex-shrink-0">
@@ -122,8 +122,8 @@ const Certifications = () => {
             {achievements.map((achievement, index) => (
               <div 
                 key={index} 
-                className="bg-gray-50 dark:bg-neutral-950 rounded-2xl p-8 shadow-sm animate-reveal-up"
-                style={{ animationDelay: `${200 + index * 100}ms` }}
+                className="bg-gray-50 dark:bg-neutral-950 rounded-2xl p-8 shadow-sm opacity-0 animate-fade-in"
+                style={{ animationDelay: `${50 + index * 50}ms` }}
               >
                 <div className="flex items-start">
                   <div className="w-10 h-10 rounded-xl bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center mr-4 flex-shrink-0">

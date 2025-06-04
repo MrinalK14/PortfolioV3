@@ -107,8 +107,8 @@ const Experience = () => {
             {workExperience.map((job, index) => (
               <div 
                 key={index} 
-                className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 animate-reveal-up"
-                style={{ animationDelay: `${200 + index * 100}ms` }}
+                className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 opacity-0 animate-fade-in"
+                style={{ animationDelay: `${50 + index * 50}ms` }}
               >
                 {/* Left column - Timeline */}
                 <div className="space-y-2">
@@ -158,8 +158,8 @@ const Experience = () => {
             {education.map((edu, index) => (
               <div 
                 key={index} 
-                className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 animate-reveal-up"
-                style={{ animationDelay: `${200 + index * 100}ms` }}
+                className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 opacity-0 animate-fade-in"
+                style={{ animationDelay: `${50 + index * 50}ms` }}
               >
                 {/* Left column - Timeline */}
                 <div className="space-y-2">

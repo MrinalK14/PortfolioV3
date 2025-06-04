@@ -55,7 +55,7 @@ const Hero = () => {
             aria-label="LinkedIn Profile"
           >
             <Linkedin size={18} />
-            <span>LinkedIn</span>
+            <span className="hidden sm:inline">LinkedIn</span>
           </a>
           <a 
             href="https://github.com/MrinalK14" 
@@ -65,7 +65,7 @@ const Hero = () => {
             aria-label="GitHub Profile"
           >
             <Github size={18} />
-            <span>GitHub</span>
+            <span className="hidden sm:inline">GitHub</span>
           </a>
           <a 
             href="https://drive.google.com/file/d/1EKknlh-ZtOyzevriM3NOoplCapwyyRwl/view?usp=drive_link" 
@@ -75,7 +75,7 @@ const Hero = () => {
             aria-label="Download Resume"
           >
             <FileText size={18} />
-            <span>Resume</span>
+            <span className="hidden sm:inline">Resume</span>
           </a>
         </div>
       </div>
@@ -95,7 +95,7 @@ const Hero = () => {
       </div>
       
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
         <button 
           onClick={scrollToNextSection}
           aria-label="Scroll down"

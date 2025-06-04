@@ -5,9 +5,9 @@ import React from 'react';
 const Skills = () => {
   // All skills organized in rows of 5
   const skillRows = [
-    "js,ts,python,html,css",
-    "react,nextjs,tailwind,nodejs,git",
-    "mongodb,figma,aws,github,vscode"
+    "js,ts,react,nextjs,vue,tailwind,html,css,materialui",
+    "nodejs,postman,mongodb,python,mysql,graphql,express,flask,vercel",
+    "docker,azure,aws,gcp,git,github,vscode,figma,notion"
   ];
 
   return (
